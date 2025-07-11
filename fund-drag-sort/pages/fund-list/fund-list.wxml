@@ -1,0 +1,14 @@
+<movable-area class="movable-area" style="height: 100vh;">
+  <block wx:for="{{funds}}" wx:key="index">
+    <movable-view class="fund-card" data-index="{{index}}" direction="vertical" bindchange="onSort">
+      <view class="fund-name">{{item.name}}</view>
+      <view class="fund-ratio" style="background: linear-gradient(to right, #FFEEEE {{item.ratio}}%, #EEFFEE {{item.ratio}}%);">
+        {{item.ratio}}%
+      </view>
+    </movable-view>
+  </block>
+</movable-area>
+
+<!-- 可加在页面合适位置 -->
+<view wx:if="{{analysisLoading}}">分析中...</view>
+<view wx:else>{{analysisResult}}</view>
