@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/fund-list/fund-list"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "基金列表",
+    "navigationBarTextStyle": "black"
+  }
+}
